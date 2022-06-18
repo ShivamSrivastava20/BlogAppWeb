@@ -1,0 +1,37 @@
+<form  [formGroup]="form" (ngSubmit)="onRegisterSubmit()" class="mt-5">
+    <h1 class="mb-4 text-center">Registration Form </h1>
+    <div class="card  mx-auto ">
+       
+    <div class="form-group row mt-5 mx-5">
+      <label for="exampleInputEmail1" class="col-sm-2 col-form-label" >Email address</label>
+      <div class="col-sm-10">
+      <input type="email" class="form-control" formControlName= " email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email-ID">
+     </div>
+    </div>
+
+    <div class="form-group row mt-5 mx-5">
+        <label for="exampleInputUsername" class="col-sm-2 col-form-label">UserName</label>
+        <div class="col-sm-10">
+        <input type="email" class="form-control" formControlName= "username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter UserName">
+       </div>
+      </div>
+
+
+    <div class="form-group row mt-5 mx-5">
+      <label for="exampleInputPassword1" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+      <input type="password" class="form-control" formControlName= "password" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    </div>
+
+    <div class="form-group row mt-5 mb-5 mx-5">
+        <label for="exampleInputPassword1" class="col-sm-2 col-form-label">ConfirmPassword</label>
+        <div class="col-sm-10">
+        <input type="password" class="form-control"  formControlName= "confirm" id="exampleInputPassword1" placeholder="Password">
+      </div></div>
+    
+    </div>
+  </form>
+  <button type="submit" class="btn btn-primary mt-3" style="width: 200px; ">Submit</button>
+
+  
